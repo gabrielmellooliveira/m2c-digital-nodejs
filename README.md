@@ -33,3 +33,7 @@ Para rodar o projeto, utilize o comando:
 ```
 yarn start
 ```
+
+## Postman
+
+Para realizar os testes nos endpoints da API, utilize o arquivo ```postman_collection.json``` na aplicação do postman.

@@ -1,0 +1,500 @@
+{
+	"info": {
+		"_postman_id": "abf15ed5-ff3f-427e-a476-2c61692d9b12",
+		"name": "M2C Digital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2009622"
+	},
+	"item": [
+		{
+			"name": "company",
+			"item": [
+				{
+					"name": "list companies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{m2c_digital_url}}/companies",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get company",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{m2c_digital_url}}/companies/g7lo9vu5aro2lwok0mrm12ui",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"companies",
+								"g7lo9vu5aro2lwok0mrm12ui"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"M2C Digital\",\n    \"document\": \"254324352452\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{m2c_digital_url}}/companies",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Microsoft\",\n    \"document\": \"-\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{m2c_digital_url}}/companies?id=c7bxxz73enacjfbbek85q14s",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"companies"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "c7bxxz73enacjfbbek85q14s"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete company",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Google\",\n    \"document\": \"5435048257740325\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{m2c_digital_url}}/companies/o2pfkvs06fy3457up7ihj8oc",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"companies",
+								"o2pfkvs06fy3457up7ihj8oc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "list users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{m2c_digital_url}}/users",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{m2c_digital_url}}/users/teste",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"users",
+								"teste"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"gabrielmello@gmail.com\",\n    \"password\": \"gabrielmello\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{m2c_digital_url}}/users",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{m2c_digital_url}}/users/teste",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"users",
+								"teste"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{m2c_digital_url}}/users/pbfcdcvnee0n7vmac380bl7k",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"users",
+								"pbfcdcvnee0n7vmac380bl7k"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "campaign",
+			"item": [
+				{
+					"name": "list campaigns",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2NHg3dmI0OXA1bGQwYTNkeGh2ZW9ubDAiLCJlbWFpbCI6ImdhYnJpZWxtZWxsb0BnbWFpbC5jb20iLCJpYXQiOjE3NDEwMTYwNjksImV4cCI6MTc0MTAxOTY2OX0.xdwkLxAo2uj9_YTFthDaFZKrQ6y86xRRoR9WxkF8Ofw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{m2c_digital_url}}/campaigns",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"campaigns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get campaign",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY3pqNmszYnJtMnZzbDR6Mm5teDY3dDEiLCJlbWFpbCI6ImdhYnJpZWxtZWxsbzFAZ21haWwuY29tIiwiaWF0IjoxNzQwNjY2MTgyLCJleHAiOjE3NDA3NTI1ODJ9.EA0w88mqr67nreHOVHGEHo3-upAAK1GQBRJOYFBXAzg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{m2c_digital_url}}/campaigns/mls3h4e2ihy2k1aj3w0i86fm",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"campaigns",
+								"mls3h4e2ihy2k1aj3w0i86fm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create campaign",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2NHg3dmI0OXA1bGQwYTNkeGh2ZW9ubDAiLCJlbWFpbCI6ImdhYnJpZWxtZWxsb0BnbWFpbC5jb20iLCJpYXQiOjE3NDA5NzAzNDIsImV4cCI6MTc0MTA1Njc0Mn0.vs4K_Sn-3mach45QLCy_zNRPI4-rYp2hFJEF03_9FLc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/gabriel.mello/Downloads/phone_numbers_100000.txt"
+								},
+								{
+									"key": "data",
+									"value": "{\"message\":\"Feliz Natal a todos!\", \"name\":\"Campanha de Natal\",\"companyId\":\"qw3uogxexlky0cuy6afcd3n9\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{m2c_digital_url}}/campaigns",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"campaigns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change campaign status to sent",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "teste",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "teste",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{m2c_digital_url}}/campaigns/sent/mls3h4e2ihy2k1aj3w0i86fm",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"campaigns",
+								"sent",
+								"mls3h4e2ihy2k1aj3w0i86fm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update campaign",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY3pqNmszYnJtMnZzbDR6Mm5teDY3dDEiLCJlbWFpbCI6ImdhYnJpZWxtZWxsbzFAZ21haWwuY29tIiwiaWF0IjoxNzQwNTU0MTU4LCJleHAiOjE3NDA2NDA1NTh9.amWfApSw_5Hs5HvjXSuX0HU2h5VG8SqbWkdRfjbRchI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"TESTE\",\n    \"message\": \"TESTE\",\n    \"status\": \"ERROR\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{m2c_digital_url}}/campaigns/mls3h4e2ihy2k1aj3w0i86fm",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"campaigns",
+								"mls3h4e2ihy2k1aj3w0i86fm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete campaign",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY3pqNmszYnJtMnZzbDR6Mm5teDY3dDEiLCJlbWFpbCI6ImdhYnJpZWxtZWxsbzFAZ21haWwuY29tIiwiaWF0IjoxNzQwNTU0MTU4LCJleHAiOjE3NDA2NDA1NTh9.amWfApSw_5Hs5HvjXSuX0HU2h5VG8SqbWkdRfjbRchI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{m2c_digital_url}}/campaigns/mls3h4e2ihy2k1aj3w0i86fm",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"campaigns",
+								"mls3h4e2ihy2k1aj3w0i86fm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "sign in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"gabrielmello@gmail.com\",\n    \"password\": \"gabrielmello\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{m2c_digital_url}}/auth/signin",
+							"host": [
+								"{{m2c_digital_url}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "m2c_digital_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
